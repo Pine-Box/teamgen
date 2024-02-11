@@ -97,7 +97,9 @@ function addIntern(answers){
 }
 
 function exportPage(){
-    console.log(team.generateTeamPage());
+    let html = team.generateTeamPage(); 
+    console.log(html);
+    fs.writeFileSync('team.html', html);
 }
 
 
