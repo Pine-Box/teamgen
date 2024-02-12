@@ -116,6 +116,7 @@ SO THAT I have quick access to their emails and GitHub profiles
  html to the console.
 
  The following screenshot shows entering the details of the team:
+ 
  [Adding team members then quitting ](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.32.59.png?raw=true)
 
  The html output for the above entries is :
