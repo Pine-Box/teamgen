@@ -105,7 +105,7 @@ function addIntern(answers){
 function exportPage(){
     let html = team.generateTeamPage(); 
     console.log(html);
-    fs.writeFileSync('team.html', html);
+    fs.writeFileSync(outputPath, html);
 }
 
 // main function that repeats until the user selects to quit
