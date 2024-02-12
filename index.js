@@ -14,10 +14,11 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 
-
+//main team global instance where employees are added
 const team = new Team();
 
 
+// collection of questions - some questions are skipped depending on which employee being created 
 const action_questions = [
     {
         type: 'list',
@@ -71,7 +72,7 @@ const action_questions = [
 },
 ]
 
-
+// function to gather the answers if the user wishes to add an employee to the team page
 function getAnswers(){
     return inquirer
     .prompt(action_questions)
@@ -81,30 +82,35 @@ function getAnswers(){
         });
     };
 
+//create and add an instance of an manager to the team instance from answers gathered    
 function addManager(answers){
     const manager = new Manager(answers.name,answers.id,answers.email,answers.phone)
     team.addTeamMember(manager);
 }
 
+//create and add an instance of an engineer to the team instance from answers gathered
 function addEngineer(answers){
     const engineer = new Engineer(answers.name,answers.id,answers.email,answers.github)
     team.addTeamMember(engineer);
 }
+
+//create and add an instance of an intern to the team instance from answers gathered
 
 function addIntern(answers){
     const intern = new Intern(answers.name,answers.id,answers.email,answers.school)
     team.addTeamMember(intern);
 }
 
+//function to generate to the project root the team page
 function exportPage(){
     let html = team.generateTeamPage(); 
     console.log(html);
     fs.writeFileSync('team.html', html);
 }
 
+// main function that repeats until the user selects to quit
 
-
- async function f1(){
+ async function init(){
     const answers = await getAnswers();
     if (answers.team === 'Add Manager')
         addManager(answers);
@@ -116,11 +122,11 @@ function exportPage(){
         exportPage();
         }
     else{     
-        f1();
+        init();
     }
  }   
 
-f1();
+init();
 
 
 
