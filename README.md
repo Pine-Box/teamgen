@@ -149,7 +149,7 @@ nothing
 To run the test suite use:
 
 ```
-node 'node_modules/.bin/jest' '/Users/apple/vscProjects/teamgen/__tests__'
+node 'node_modules/.bin/jest' './__tests__'
 
 ```
 
