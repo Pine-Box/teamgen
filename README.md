@@ -109,7 +109,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 
  The following screenshot shows what the user is prompted with:
 
- [Application execution](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.29.22.png?raw=true)
+ ![Application execution](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.29.22.png?raw=true)
 
  The options are to add an engineer, or intern or manager after selection and entering details you wil be prompted whether to quit (y/n). 
  If n then the menu to add appears again otherwise the team.html file is generated and saved in the root of the project. The application also echoes the 
@@ -117,11 +117,11 @@ SO THAT I have quick access to their emails and GitHub profiles
 
  The following screenshot shows entering the details of the team:
  
- [Adding team members then quitting ](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.32.59.png?raw=true)
+ ![Adding team members then quitting ](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.32.59.png?raw=true)
 
  The html output for the above entries is :
 
-  [Team page example](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.34.09.png?raw=true)
+![Team page example](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.34.09.png?raw=true)
 
 
 ## Installation
@@ -155,7 +155,7 @@ node 'node_modules/.bin/jest' '/Users/apple/vscProjects/teamgen/__tests__'
 
 output after running command :
 
-[Unit test execution](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.48.15.png?raw=true)
+![Unit test execution](https://github.com/pine-box/teamgen/blob/main/assets/img/Screenshot2024-02-12at21.48.15.png?raw=true)
 
 ## Questions 
 
